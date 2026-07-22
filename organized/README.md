@@ -1,8 +1,10 @@
 # AI & Algorithms Coursework Projects
 
-A collection of Java projects built for an Advanced Topics in AI / Advanced Topics in Algorithms course, covering uninformed and informed search, adversarial game search, local search optimization, and gradient-based machine learning — implemented from scratch (no external AI/ML libraries).
+A collection of Java projects built for an Advanced Topics in AI / Advanced Topics in Machine Learning course, covering uninformed and informed search, adversarial game search, local search optimization, and gradient-based machine learning — implemented from scratch (no external AI/ML libraries).
 
-Each project below went through multiple checkpoints as it was built out over the year. This README identifies the **final, most complete version of each project** — the checkpoint folders are earlier snapshots kept for history and are safe to leave out of a "greatest hits" view of the repo.
+Each project below went through multiple checkpoints as it was built out over the year. This README identifies the **final, most complete version of each project** — the checkpoint folders are earlier snapshots kept for history and are safe to leave out of a "greatest hits" view of the repo. 
+
+In addition if you test these out there will be some errors. For example for TSP solver if you try the Canada map it does it output the correct one, but a close to correct one. These all are not completley correct and efficent because I did them on a time limit while learning for the first time in class
 
 ---
 
