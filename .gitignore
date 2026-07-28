@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+
+# Compiled Java
+*.class
+
+# IntelliJ / IDE
+.idea/
+*.iml
+out/
+*.ipr
+*.iws
+
+# Build artifacts / archives
+*.zip
+__MACOSX/
