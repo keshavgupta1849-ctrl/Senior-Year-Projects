@@ -200,7 +200,7 @@ public class MissionariesAndCannibals {
     }
 
     // Main method to run Missionaries and Cannibals solver
-    public void main(String[] args) {
+    public static void main(String[] args) {
         // Default parameters
         int missionaries = 3;
         int cannibals = 3;
@@ -282,6 +282,7 @@ public class MissionariesAndCannibals {
         }
 
         // Create problem instance
+        final int totalM = missionaries, totalC = cannibals, totalCap = capacity;
         MissionariesAndCannibals problem = new MissionariesAndCannibals(missionaries, cannibals, capacity, price);
         State initial = problem.new State(missionaries, cannibals, true);
 
@@ -311,11 +312,11 @@ public class MissionariesAndCannibals {
                         if (tooManyCannibals(true) || tooManyCannibals(false)) {
                             return result;
                         }
-                        int availableM = this.onLeft() ? this.missionaries() : numberMissionaries - this.missionaries();
-                        int availableC = this.onLeft() ? this.cannibals() : numberCannibals - this.cannibals();
+                        int availableM = this.onLeft() ? this.missionaries() : totalM - this.missionaries();
+                        int availableC = this.onLeft() ? this.cannibals() : totalC - this.cannibals();
                         for (int m = 0; m <= availableM; m++) {
                             for (int c = 0; c <= availableC; c++) {
-                                if (m + c > 0 && m + c <= boatCapacity) {
+                                if (m + c > 0 && m + c <= totalCap) {
                                     result.add(new Action(m, c));
                                 }
                             }
